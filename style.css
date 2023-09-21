@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding-left: 8px;
+}
+
+body {
+    background-color: rgb(243, 215, 173);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 13px 20px;
+    margin-right: 2px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(176, 201, 209);
+    cursor: pointer;
+}
+
+main {
+    min-height: 90vh;
+    padding-top: 4px;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-left: 105px;
+    padding: 7px 13px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+input[type="email"] {
+    min-width: 27vw;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 5px 3px;
+    margin-left: 7PX;
+    font-size: 20px;
+}
+
+.logo img {
+    /* margin-top: 12px; */
+    width: 19px;
+    filter: invert(1);
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+.email {
+    font-size: 15px;
+}
+
+form label {
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#resultCont img {
+    display: flex;
+    width: 100px;
+}
+
+.container {
+    max-width: 49vw;
+    margin: auto;
+    padding: 20px 52px;
+}
+
+footer {
+    font-size: 15px;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 12px 17px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Below We Creates a Media-Query That Is Applied Until Screen Width Becomes Greater Than 600px Means From '0px' to '600px'....  */
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: rgb(224, 218, 206);
+        font-size: 19px;
+    }
+
+    nav {
+        padding-top: 10px;
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+    .container {
+        max-height: 70vh;
+        max-width: 95vw;
+    }
+
+    form label {
+        font-size: 20px;
+    }
+
+    input[type="email"] {
+        margin-top: 15px;
+        min-width: 50vw;
+        border: 2px solid black;
+        border-radius: 6px;
+        padding: 5px 3px;
+        margin-left: 7PX;
+        font-size: 20px;
+    }
+
+    .submit {
+        background-color: black;
+        color: white;
+        margin-left: 87px;
+        padding: 8px 15px;
+        border: 1px solid gray;
+        border-radius: 12px;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .logo img {
+        margin-top: 12px;
+        width: 19px;
+        filter: invert(1);
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+}
